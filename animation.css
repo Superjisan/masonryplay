@@ -1,0 +1,65 @@
+.bigDiv{
+	width: 600px;
+	height: 400px;
+	background: -webkit-linear-gradient(bottom, rgb(33,31,31), rgba(0,0,0,0.16));
+	background: -moz-linear-gradient(bottom, rgb(33,31,31), rgba(0,0,0,0.16));
+}
+
+.insideTopDiv{
+	height: 70%;
+	overflow: hidden;
+}
+
+.insideBottomDiv{
+	height: 30%;
+	overflow: hidden;
+}
+
+.insideBottomDiv .button{
+	width: 25%;
+	height: 100%;
+	float: left;
+	text-align: center;
+	padding-top: 2rem;
+}
+
+.insideBottomDiv .button i{
+	font-size: 3rem;
+
+}
+
+#leftToRight .insideBottomDiv{
+	color: transparent;
+	width: 0;
+	background-color: rgb(254,0,110);
+	-webkit-transition: width;
+	-webkit-transition-timing-function: ease-out;
+	-webkit-transition-duration: 500ms;
+}
+
+#leftToRight:hover .insideBottomDiv{
+	width: 600px;
+	
+	color: black;
+	-webkit-transition: width;
+	-webkit-transition-timing-function: ease-out;
+	-webkit-transition-duration: 500ms;
+}
+
+#rightToLeft .insideBottomDiv{
+	color: transparent;
+	margin-left: 100%;
+	background-color: rgb(254,0,110);
+	-webkit-transition: margin-left;
+	-webkit-transition-timing-function: ease-out;
+	-webkit-transition-duration: 500ms;
+}
+
+#rightToLeft:hover .insideBottomDiv{
+	margin-left: 0;
+	
+	color: black;
+	-webkit-transition: margin-left;
+	-webkit-transition-timing-function: ease-out;
+	-webkit-transition-duration: 500ms;
+}
